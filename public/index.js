@@ -6,13 +6,16 @@
     <title>News and Comment</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
+
   <body>
     <div id="wrapper">
-      <h1>News!</h1>
-      <h2>Add your own comments by clicking on an article.</h2>
+      <h1>Mongo News First!</h1>
+      <h2>article.</h2>
       <div id="articles"></div>
     </div>
-    <div id="notes"></div>
+
+
+    <div id="feedback"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
