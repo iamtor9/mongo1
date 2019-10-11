@@ -2,8 +2,8 @@
 $.getJSON("/articles", function(data) {
 
 for (let i = 0; i < data.length; i++) {
-$("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
-}
+    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+    }
 });
 
 // create doc .onclick paragraph()
@@ -18,7 +18,6 @@ $.ajax({
 
  //promise .then 
 .then(function(data) {
-//console.log(data);
 $("#feedback").append("<h2>" + data.title + "</h2>");
 $("#feedback").append("<input id='titleinput' name='title' >");
 $("#feedback").append("<textarea id='bodyinput' name='body'></textarea>");
@@ -37,18 +36,16 @@ if (data.feedback) {
 // button function for feedback, event listener
 $(document).on("click", "#savefeedback", function() {
 
-    let thisId = $(this).attr("data-id");
-    $.ajax({
-        method: "POST",
-        url: "/articles/" + thisId,
+let thisId = $(this).attr("data-id");
+$.ajax({
+    method: "POST",
+    url: "/articles/" + thisId,
         data: {
-            title: $("#titleinput").val(),
-            body: $("#bodyinput").val()
+        title: $("#titleinput").val(),
+        body: $("#bodyinput").val()
         }
-    });
+});
 
-
-// make promise function
 .then(function(data) {
      $("#feedback").empty();});
      $("#titleinput").val("");

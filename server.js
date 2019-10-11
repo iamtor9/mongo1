@@ -80,10 +80,9 @@ app.post("/articles/:id", function(req, res) {y
       return db.Article.findOneAndUpdate({ _id: req.params.id }, { note: feedbackdb._id }, { new: true });
     })
 
-
-    .then(function(dbArticle) {
-        //let client know errr or success!!
-      res.json(dbArticle);
+.then(function(dbArticle) {
+    //let client know errr or success!!
+    res.json(dbArticle);
     })
     .catch(function(err) {
       res.json(err);
