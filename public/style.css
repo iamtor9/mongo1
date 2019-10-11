@@ -1,0 +1,53 @@
+body { 
+    background-color: skyblue 
+  }
+  #wrapper {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5%;
+    background-color: whitesmoke;
+  }
+  #articles {
+    display: inline-block;
+    overflow: auto;
+    width: 80%;
+    height: 1100px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 12.5%;
+  }
+  #notes {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: -50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  textarea, input {
+    display: block;
+    width: 100%;
+    background-color: #FCF5C7;
+  }
+  input {
+    height: 36px;
+    font-size: 24px;
+  }
+  textarea {
+    height: 200px;
+    font-size: 18px;
+  }
+  h1 {
+    font-family: fantasy;
+    margin-left: 40%;
+  }
+  h2 {
+    font-family: comic Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 6.25%;
+  }
+  #scrapebutton{
+    margin-left: 46.40%;
+    margin-bottom: 0.5%;
+    font-size: 20px;
+  }
+  
